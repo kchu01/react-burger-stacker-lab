@@ -1,7 +1,8 @@
-export default function Ingredient() {
+export default function Ingredient(props) {
     return (
         <div>
-            <h2>Hello from ingredients</h2>
+            <button onClick={props.handleIncredientClick} >{props.name}</button>
+
         </div>
     )
 }
